@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 :root{
   --bg-light-clr: #ececfc;
@@ -9,7 +10,8 @@
   --clr-secondary:#171717;
   --clr-contrast: #b42045;
 
-  --ff: "Rubik", sans-serif;
+  --ff-btns: "Open Sans", sans-serif;
+  --ff-display: "Silkscreen", sans-serif;
 
   --flex-gap: 8px;
 }
@@ -18,7 +20,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--ff);
+  font-family: var(--ff-btns);
 }
 
 body{
@@ -60,8 +62,9 @@ body{
 }
 
 .result{
+  font-family: var(--ff-display);
   color: var(--bg-light-clr);
-  font-size: 4.5rem;
+  font-size: 3rem;
 }
 /* buttons possition */ 
 .calc--btns{
