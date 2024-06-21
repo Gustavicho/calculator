@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@300..900&display=swap');
+
+:root{
+  --bg-light-clr: #ececfc;
+  --bg-dark-clr: #353535;
+  --bg-calc-display: #6e835b;
+
+  --clr-primary: #867f7b;
+  --clr-secondary:#171717;
+  --clr-contrast: #b42045;
+
+  --ff: "Rubik", sans-serif;
+
+  --flex-gap: 8px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--ff);
+}
+
+body{
+  /* self */
+  height: 100vh;
+  background-color: var(--bg-light-clr);
+  /* items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-body{
+  /* self */
+  width: 450px;
+  height: 600px;
+  padding: 12px;
+  border-radius: 16px;
+  background-color: var(--bg-dark-clr);
+  box-shadow: 0 0 10 20 rgba(0, 0, 0, .1);
+  /* items */
+  display: flex;
+  flex-direction: column;
+  gap: var(--flex-gap);
+}
+
+.calc--display{
+  width: 100%;
+  height: 20%;
+  border-radius: 4px;
+  background-color: var(--bg-calc-display);
+}
+
+/* buttons possition */ 
+.calc--btns{
+  /* self */
+  height: 80%;
+  justify-self: stretch;
+  /* items */
+  display: flex;
+  gap: var(--flex-gap);
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.row{
+  flex: 1;
+  display: flex;
+  gap: var(--flex-gap);
+}
+
+/* button design */
+button{
+  flex: 1;
+
+  color: var(--bg-light-clr);
+  font-size: 1.5rem;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  transition: .3s;
+}
+button:hover{
+  cursor: pointer;
+  scale: 1.05;
+  filter: brightness(1.2);
+}
+
+#zero{flex: 2.43;}
+
+.center-btn{background-color: var(--clr-primary);}
+.top-btn{background-color: var(--clr-secondary);}
+.side-btn{background-color: var(--clr-contrast);}
