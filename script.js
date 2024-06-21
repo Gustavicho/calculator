@@ -7,6 +7,8 @@ document.querySelectorAll('.num-btn').forEach(btn => {
   });
 });
 
+document.querySelector('.clear-btn').addEventListener('click', clear)
+
 function operate(userOp, n1, n2){
   const OPERATIONS = ['+', '-', '*', '/']
   switch (OPERATIONS.findIndex(op => op === userOp)) {
@@ -19,6 +21,10 @@ function operate(userOp, n1, n2){
     case 3:
       return div(n1 ,n2);
   }
+}
+
+function clear(){
+  display.textContent = '';
 }
 
 function sum(a, b){
