@@ -38,20 +38,31 @@ body{
   padding: 12px;
   border-radius: 16px;
   background-color: var(--bg-dark-clr);
-  box-shadow: 0 0 10 20 rgba(0, 0, 0, .1);
+  box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.3);
   /* items */
   display: flex;
   flex-direction: column;
   gap: var(--flex-gap);
 }
 
+/* display */
 .calc--display{
+  /* self */
   width: 100%;
   height: 20%;
+  padding: 12px;
   border-radius: 4px;
   background-color: var(--bg-calc-display);
+  /* item */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
+.result{
+  color: var(--bg-light-clr);
+  font-size: 4.5rem;
+}
 /* buttons possition */ 
 .calc--btns{
   /* self */
