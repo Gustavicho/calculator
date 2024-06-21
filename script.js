@@ -1,5 +1,11 @@
 let op, n1, n2;
+const display = document.querySelector('.result');
 
+document.querySelectorAll('.num-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    display.textContent += e.target.value; 
+  });
+});
 
 function operate(userOp, n1, n2){
   const OPERATIONS = ['+', '-', '*', '/']
